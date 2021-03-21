@@ -16,7 +16,7 @@ public class ServiceTest {
 
 
     @Test
-    public void testAddStudent(){
+    public void tc1_addStudent(){
         StudentValidator studentValidator = new StudentValidator();
         TemaValidator temaValidator = new TemaValidator();
         String filenameStudent = "fisiere/test/testStudenti.xml";
@@ -34,7 +34,7 @@ public class ServiceTest {
     }
 
     @Test
-    public void testAddStudentShouldFail(){
+    public void tc2_addStudent(){
         StudentValidator studentValidator = new StudentValidator();
         TemaValidator temaValidator = new TemaValidator();
         String filenameStudent = "fisiere/test/testStudenti.xml";
