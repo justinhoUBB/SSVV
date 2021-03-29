@@ -45,7 +45,7 @@ public class ServiceTest {
         NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         Service testService = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
-        Tema testTema = new Tema("1EN","A test assignment", 15, 6);
+        Tema testTema = new Tema("2EN","A test assignment", 15, 6);
 
         String expectedMessage = "Deadlineul trebuie sa fie intre 1-14.";
         Exception exception =  assertThrows(ValidationException.class, () -> {
@@ -53,6 +53,7 @@ public class ServiceTest {
         });
 
         assertTrue(exception.getMessage().contains(expectedMessage));
+        assertTrue(testService.findTema("2EN") == null);
 
     }
 
