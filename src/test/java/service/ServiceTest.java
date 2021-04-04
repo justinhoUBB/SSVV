@@ -79,7 +79,7 @@ public class ServiceTest {
     }
 
     @Test
-    public void tc5_addTema_invalidRecieve(){
+    public void tc5_addTema_invalidReceive(){
 
         Tema testTema = new Tema("2EN","A test assignment", 12, 15);
 
