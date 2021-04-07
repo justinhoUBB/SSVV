@@ -30,9 +30,9 @@ public class ServiceIntegrationTest {
 
     @Test
     public void tc1_addTema(){
-        Tema testTema = new Tema("2EN","A test assignment", 10, 10);
+        Tema testTema = new Tema("3EN","A test assignment", 10, 10);
         testService.addTema(testTema);
-        assertTrue(testService.findTema(("2EN")).equals(testTema));
+        assertTrue(testService.findTema(("3EN")).equals(testTema));
     }
 
 
