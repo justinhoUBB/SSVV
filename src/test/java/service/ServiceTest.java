@@ -28,7 +28,6 @@ public class ServiceTest {
 
     @Test
     public void tc1_addTema(){
-
         Tema testTema = new Tema("1EN","A test assignment", 8, 6);
         testService.addTema(testTema);
         assertTrue(testService.findTema(("1EN")).equals(testTema));

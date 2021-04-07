@@ -30,23 +30,23 @@ public class ServiceIntegrationTest {
 
     @Test
     public void tc1_addTema(){
-        Tema testTema = new Tema("1EN","A test assignment", 10, 10);
+        Tema testTema = new Tema("2EN","A test assignment", 10, 10);
         testService.addTema(testTema);
-        assertTrue(testService.findTema(("1EN")).equals(testTema));
+        assertTrue(testService.findTema(("2EN")).equals(testTema));
     }
 
 
     @Test
     public void tc2_addStudent(){
 
-        Student testStudent = new Student("234", "testStudent", 933, "test@test.com");
+        Student testStudent = new Student("23", "testStudent", 933, "test@test.com");
         testService.addStudent(testStudent);
-        assertTrue(testService.findStudent("234").equals(testStudent));
+        assertTrue(testService.findStudent("23").equals(testStudent));
     }
 
     @Test
     public void tc3_addGrade(){
-        Nota testNota = new Nota("GR1", "234", "1EN", 10,   LocalDate.now());
+        Nota testNota = new Nota("GR1", "23", "2EN", 10,   LocalDate.now());
         testService.addNota(testNota, "Good job");
         assertTrue(testService.findNota("GR1")!= null);
 
@@ -58,8 +58,8 @@ public class ServiceIntegrationTest {
         tc2_addStudent();
         tc3_addGrade();
         testService.deleteNota("GR1");
-        testService.deleteTema("1EN");
-        testService.deleteStudent("234");
+        testService.deleteTema("2EN");
+        testService.deleteStudent("23");
     }
 
 }

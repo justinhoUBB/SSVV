@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df1992e9-2ca7-474f-a59e-a3b588694bf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/ServiceIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisiere/DataInceput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/DataInceput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fisiere/test/testNote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/test/testNote.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fisiere/test/testStudenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/test/testStudenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fisiere/test/testTeme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/test/testTeme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/testStudent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/testStudent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceIntegrationTest">
+  <component name="RunManager" selected="JUnit.ServiceIntegrationTest.t4_integrationTest">
     <configuration name="ServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSVV" />
       <extension name="coverage">
@@ -75,6 +76,22 @@
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.ServiceIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceIntegrationTest.t4_integrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSVV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="t4_integrationTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.tc2_addTema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSVV" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
-      <option name="METHOD_NAME" value="tc2_addTema" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceTest.tc3_addTema_invalidNr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSVV" />
       <extension name="coverage">
@@ -144,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceIntegrationTest.t4_integrationTest" />
         <item itemvalue="JUnit.ServiceIntegrationTest" />
         <item itemvalue="JUnit.ServiceTest" />
         <item itemvalue="JUnit.ServiceTest.tc3_addTema_invalidNr" />
         <item itemvalue="JUnit.ServiceTest.tc1_addTema" />
-        <item itemvalue="JUnit.ServiceTest.tc2_addTema" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +171,7 @@
       <workItem from="1616994428974" duration="822000" />
       <workItem from="1616995555067" duration="3638000" />
       <workItem from="1617532556048" duration="1854000" />
-      <workItem from="1617772247151" duration="2534000" />
+      <workItem from="1617772247151" duration="3516000" />
     </task>
     <servers />
   </component>
@@ -186,14 +187,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" width="814" height="728" key="#Intentions/0.0.1536.864@0.0.1536.864" timestamp="1616321834172" />
-    <state x="365" y="91" key="#ServiceTest" timestamp="1617533615596">
+    <state x="365" y="91" key="#ServiceTest" timestamp="1617776749059">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="365" y="88" key="#ServiceTest.addStudent" timestamp="1616320980791">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="365" y="88" key="#ServiceTest.addStudent/0.0.1536.864@0.0.1536.864" timestamp="1616320980791" />
-    <state x="365" y="91" key="#ServiceTest/0.0.1536.864@0.0.1536.864" timestamp="1617533615596" />
+    <state x="365" y="91" key="#ServiceTest/0.0.1536.864@0.0.1536.864" timestamp="1617776749059" />
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616321877977">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -206,22 +207,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="276" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1616995249457" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1617775790824">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1617776798982">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617775790824" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1617775790824">
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617776798982" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1617776798982">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617775790824" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1617775790824">
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617776798982" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1617776798981">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617775790824" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1617775790824">
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617776798981" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1617776798982">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617775790824" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617776798982" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1617001499200">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
