@@ -17,9 +17,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ServiceIntegrationTest {
 
-    String filenameStudent = "fisiere/test/testStudenti.xml";
-    String filenameTema = "fisiere/test/testTeme.xml";
-    String filenameNota = "fisiere/test/testNote.xml";
+    String filenameStudent = "fisiere/test/Studenti.xml";
+    String filenameTema = "fisiere/test/Teme.xml";
+    String filenameNota = "fisiere/test/Note.xml";
     StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
     TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
     NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
@@ -29,15 +29,14 @@ public class ServiceIntegrationTest {
     Service testService = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
     @Test
-    public void tc1_addTema(){
-        Tema testTema = new Tema("3EN","A test assignment", 10, 10);
+    public void IT_addTema(){
+        Tema testTema = new Tema("3EN","A test assignment", 11, 11);
         testService.addTema(testTema);
         assertTrue(testService.findTema(("3EN")).equals(testTema));
     }
 
-
     @Test
-    public void tc2_addStudent(){
+    public void IT_addStudent(){
 
         Student testStudent = new Student("23", "testStudent", 933, "test@test.com");
         testService.addStudent(testStudent);
@@ -45,18 +44,30 @@ public class ServiceIntegrationTest {
     }
 
     @Test
-    public void tc3_addGrade(){
-        Nota testNota = new Nota("GR1", "23", "2EN", 10,   LocalDate.now());
+    public void IT_addGrade(){
+        Nota testNota = new Nota("GR1", "23", "3EN", 10,   LocalDate.now());
         testService.addNota(testNota, "Good job");
         assertTrue(testService.findNota("GR1")!= null);
-
+        testService.deleteNota("GR1");
+        testService.deleteStudent("23");
+        testService.deleteTema("3EN");
     }
 
     @Test
-    public void t4_integrationTest(){
-        tc1_addTema();
-        tc2_addStudent();
-        tc3_addGrade();
+    public void IT_integrationTest(){
+
+        Tema testTema = new Tema("3EN","A test assignment", 11, 11);
+        Student testStudent = new Student("23", "testStudent", 933, "test@test.com");
+        Nota testNota = new Nota("GR1", "23", "3EN", 10,   LocalDate.now());
+
+        testService.addTema(testTema);
+        testService.addStudent(testStudent);
+        testService.addNota(testNota, "Good job");
+
+        assertTrue(testService.findTema(("3EN")).equals(testTema));
+        assertTrue(testService.findStudent("23").equals(testStudent));
+        assertTrue(testService.findNota("GR1")!= null);
+
         testService.deleteNota("GR1");
         testService.deleteTema("2EN");
         testService.deleteStudent("23");

@@ -14,9 +14,9 @@ import validation.ValidationException;
 import static org.junit.jupiter.api.Assertions.*;
 public class ServiceTest {
 
-    String filenameStudent = "fisiere/test/testStudenti.xml";
-    String filenameTema = "fisiere/test/testTeme.xml";
-    String filenameNota = "fisiere/test/testNote.xml";
+    String filenameStudent = "fisiere/test/Studenti.xml";
+    String filenameTema = "fisiere/test/Teme.xml";
+    String filenameNota = "fisiere/test/Note.xml";
     StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
     TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
     NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
