@@ -82,3 +82,21 @@ Nota: 7.5
 Predata in saptamana: 12
 Deadline: 11
 Feedback: Good job
+
+Tema: BBT2
+Nota: 6.5
+Predata in saptamana: 13
+Deadline: 12
+Feedback: good Job
+
+Tema: BBT2
+Nota: 6.5
+Predata in saptamana: 13
+Deadline: 12
+Feedback: good Job
+
+Tema: BBT2
+Nota: 6.5
+Predata in saptamana: 13
+Deadline: 12
+Feedback: good Job
